@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+
+    <H2>Ejercicio de Introducción a HTML en OpenBootcamp</H2>
+    <!-- Este es mi primer comentario de dos líneas
+    Aprendiendo a documentar mi código con OpenBootcamp -->
+
+    <ul>
+        <p>Mis Videos favoritos de Youtube son: </p>
+        <li> <a href="https://www.youtube.com/watch?v=6fmmQ6_xexU"  target="_blank"> Lindsey Stirling - Ice Storm</a></li>
+        <li> <a href="https://www.youtube.com/watch?v=7bczvKRhycA&list=LL&index=251"  target="_blank">Mark Forster - 194 Länder</a> </li>
+        <li><a href="https://www.youtube.com/watch?v=Tda5u5JNRko" target="_blank">Hermes - Destripando la Historia con Pascu y Rodri</a></li>
+    </ul>
+</body>
+</html>
