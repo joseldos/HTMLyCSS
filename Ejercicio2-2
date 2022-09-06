@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Ejercicio 02/2 - Tablas en HTML</h1>
+    <table>
+        <tr>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Año de Publicacion</th>
+            <th>Enlace a Amazon</th>
+        </tr>
+        <tr>
+            <td>Game of Thrones</td>
+            <td>George R.R. Martin's</td>
+            <td>2015</td>
+            <td><a href="https://www.amazon.es/George-R-R-Martin-Boxed-Set/dp/1101965487/ref=sr_1_1?keywords=cancion+de+hielo+y+fuego+coleccion+completa&qid=1662437424&s=books&sprefix=cancio%2Cstripbooks%2C80&sr=1-1" target="_blank">Haz Clic para ir a Amazon.</a></td>
+        </tr>
+        <tr>
+            <td>El Ocho</td>
+            <td>Katherine Neville</td>
+            <td>2 de Enero 2008</td>
+            <td><a href="https://www.amazon.es/s?k=el+ocho&i=stripbooks&__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=T5JLZR7P4GX6&sprefix=el+ocho%2Cstripbooks%2C92&ref=nb_sb_noss_1" target="_blank">Haz Clic para ir a Amazon.</a></td>
+        </tr>
+        <tr>
+            <td>El Rey de hierro</td>
+            <td>Maurice Druon</td>
+            <td>1955</td>
+            <td><a href="https://www.amazon.es/rey-hierro-Los-Reyes-Malditos/dp/8413140021/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=los+reyes+malditos&qid=1662437788&s=books&sr=1-1" target="_blank">Haz Clic para ir a Amazon.</a></td>
+        </tr>
+    </table>
+
+</body>
+</html>
