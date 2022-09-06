@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Multimedia</title>
+</head>
+<body>
+    <section>
+        <h1>Aprendiendo a utilizar imagenes</h1>
+        <img src="https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_DarkSoulsRemastered.jpg" alt="Dark Souls Remastered" width="500" />
+        
+    </section>
+    <section>
+        <h1>Aprendiendo a utilizar vídeos</h1>
+        <video autoplay muted width="500" controls autoplay loop muted>
+            <source src="https://www.youtube.com/embed/6WmbTTeIQNg" type="video/ogg"/>
+        </video>
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/6WmbTTeIQNg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; muted" allowfullscreen></iframe>
+    </section>
+    <section>
+        <h1>Aprendiendo a utilizar los audios</h1>
+        <audio controls autoplay loop>
+            <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_bc98e1299b.mp3" type="audio/mp3">
+        </audio>
+    </section>
+</body>
+</html>
