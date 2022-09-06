@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganando precisión con los selectores en CSS </title>
+    <link rel="stylesheet" href="estiloscss.css">
+    <style>
+        /* Añado aqui los estilos para poder subir todo en un solo archivo*/
+        #elemento-1{
+            color:red;
+        }
+        ul li:first-child {
+            font-size: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="seccion">
+        <h2 id="titulo" class="encabezado">Lista de la compra</h2>
+        <ul>
+            <li id="elemento-1">Tomates.</li>
+            <li id="elemento-2">Cebollas.</li>
+            <li id="elemento-3">Ajos.</li>
+            <li id="elemento-4">Pasta</li>
+            <li id="elemento-5">Carne Picada</li>
+        </ul>
+        <ol>
+            <li id="elemento-1">Mercadona</li>
+            <li id="elemento-2">Aldi</li>
+            <li id="elemento-3">LIDL</li>
+            <li id="elemento-4">DIA</li>
+            <li id="elemento-5">Supermercados El Corte Ingles</li>
+
+        </ol>
+    </section>
+</body>
+</html>m
