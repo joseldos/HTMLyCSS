@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disposición de elementos en CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .galeria{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .galeria-imagen{
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="galeria">
+        <img class="galeria-imagen" src="https://www.caracteristicas.co/wp-content/uploads/2017/03/pajaro-azul-e1563758291533.jpg" alt="pajaro azul">
+        <img class="galeria-imagen" src="https://www.gtush.com/wp-content/uploads/2018/12/pico.jpg" alt="tucan">
+        <img class="galeria-imagen" src="https://t5z6q4c2.rocketcdn.me/wp-content/uploads/2020/01/aves-principais-tipos-estrutura-fisica-circulacao-respiracao-e-digestao.jpg" alt="periquitos">
+        <img class="galeria-imagen" src="https://www.animalesparacolorear.com/wp-content/uploads/2019/10/Aves-para-colorear.jpg" alt="loros">
+        <img class="galeria-imagen" src="https://agaporni.info/wp-content/uploads/2018/09/Agaporni-1.jpg" alt="agapornis">
+        <img class="galeria-imagen" src="https://dam.ngenespanol.com/wp-content/uploads/2020/12/colibries-2.jpg" alt="colibri de colores">
+    </div>
+</body>
+</html>
