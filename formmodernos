@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,600;0,900;1,200;1,600&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+/* font-family: 'Mulish', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: #161717;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* espacio entre las lineas */
+    width: 450px;
+    margin: auto;
+}
+.buttons{
+    align-self: flex-start;
+    display: flex;
+    gap: 20px;
+
+}
+
+.google-btn{
+    background-color: #1a73e8;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+.google-btn:hover{
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.google-btn picture{
+    width: 35px;
+    background-color: white;
+    height: 35px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-btn picture img{
+    width: 75%;
+}
+
+.google-btn span{
+    color: white;
+    padding: 15px;
+    font-weight: 500;
+}
+
+.twitter-btn{
+    color:#bbb;
+    background-color: #eee;
+    border: none;
+    width: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.twitter-btn picture img{
+    width: 90%;
+    opacity: 0.7;
+}
+
+.twitter-btn:hover{
+    opacity: 0.8;
+}
+
+.separator {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+.separator hr{
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.separator span {
+    color: white;
+}
+
+.section-inputs{
+    display: flex;
+    gap: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+}
+
+label span{
+    font-weight: 700;
+}
+
+
+.section-inputs label input{
+    width: 80%;
+}
+
+label input{
+    width: 90%;
+    background-color: #212121;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+    transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+    color: white;
+    
+}
+
+label input:hover, label input:focus {
+    background-color: #454045;
+    border: 1px solid #f3f3f4;
+    box-shadow: 0 0 4px #e51fe2a8;
+}
+
+.checkbox-label{
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox-label input[type="checkbox"]{
+    width: 20px;
+}
+
+.checkbox-label span {
+    font-weight: 400;
+}
+
+.submit-btn {
+    background-color: #ea4c89;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14pt;
+    cursor: pointer;
+
+}
+
+.submit-btn:hover{
+    opacity: 0.75;
+}
+    </style>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Regístrate en los formularios</h3>
+        <div class="buttons">
+            <button class="google-btn">
+                <picture>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/800px-Google_%22G%22_Logo.svg.png" alt="logo de Google">
+                </picture>
+                <span>Registrarse con Google</span>
+            </button>
+            <button class="twitter-btn">
+                <picture>
+                    <img src="https://w7.pngwing.com/pngs/701/961/png-transparent-tweeter-logo-silhouette-monochrome-graphy-twitter-monochrome-tail-bird.png" alt="logo twitter">
+                </picture>
+            </button>
+        </div>
+        <div class="separator">
+            <hr>
+            <span>O ...</span>
+            <hr>
+        </div>
+        <form action="" method="">
+            <div class="section-inputs">
+                <label for="name">
+                    <span>Name</span>
+                    <input type="text" id="name" name="name" />
+                </label>
+                <label for="username">
+                    <span>Username</span>
+                    <input type="text" id="username" name="username" />
+                </label>
+            </div>
+            
+            <label for="email">
+                <span>Email</span>
+                <input type="email" id="email" name="email" />
+            </label>
+            <label for="password">
+                <span>password</span>
+                <input type="password" id="Password" name="Password" placeholder="6+ caracteres" />
+            </label>
+            <label for="chackbox" class="checkbox-label">
+                <input type="checkbox" id="checkbox" />
+                <span>Acepto las condiciones y el aviso legal.</span>
+            </label>
+            <button type="submit" class="submit-btn">Crear Cuenta</button>
+        </form>
+    </div>
+</body>
+</html>
