@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snimaciones y transiciones en CSS</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .btn-modern{
+            padding: 10px 20px;
+            margin: 0;
+            border: none;
+            border-radius: 10px;
+            background-color:salmon;
+            color: rgb(248, 221, 221);
+            transition: transform 0.4s,  box-shadow 0.4s, background-color 0.4s, color 0.4s;
+        }
+
+        .btn-modern:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 0 3px #333;
+            background-color:rgb(219, 108, 95);
+            color: rgb(255, 255, 255);
+
+        }
+
+    </style>
+</head>
+<body>
+    <button class="btn-modern">Preparar Pedido</button>
+</body>
+</html>
