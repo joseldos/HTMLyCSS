@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Responsive con CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;400&family=Quicksand:wght@300;500;700&display=swap');
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(230, 230, 230);
+        }
+
+        .contenedor{
+            display: flex;
+            align-items:center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100vw;
+            height: 100vh;
+            
+        }
+
+
+
+        .barra{
+            display: flex;
+            justify-content:space-around;
+            flex-direction:row;
+            align-items:baseline;
+            font-family: 'Mukta', sans-serif;
+            width: 90vw;
+            font-size: 1rem;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            order: 1;
+        }
+        .principal{
+
+            font-family: 'Quicksand', sans-serif;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            font-size: 1.2rem;
+            order: 0;
+            width: 80vw;
+            height: 80vh;
+            margin: 1rem;
+        }
+        .principal h2{
+            text-align: center;
+
+        }
+
+        .item h4{
+            margin: 0.3rem 0.3rem 0.2rem 1rem;
+            
+        }
+        
+        .item p {
+            margin: 0.3rem 0.3rem 0.2rem 1rem;
+
+        }
+
+
+        .item{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(255, 255, 255);
+            transition: box-shadow 0.4s, color 0.4s, background-color 0.4s;
+            color: rgb(60, 134, 134);
+            font-size: 0.8rem;
+            margin: 0.5rem;
+            border-radius: 5px;
+        }
+
+        .item1:hover , .item2:hover , .item3:hover{
+            background-color: rgb(237, 237, 237);
+            color: rgb(44, 75, 75);
+            box-shadow: 0 0 2px rgb(177, 177, 177);
+
+        }
+
+        @media (min-width:640px){
+            .principal{
+                width: 80vw;
+                height: 80vh;
+                order: 1;
+                font-size: 2rem;
+                margin: 2rem;
+
+            }
+            .contenedor{
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction:row;
+                width: 100vw;
+                height: 100vh;
+            }
+            .barra{
+                width: 20vw;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-content: space-around;
+                align-items: space-around;
+                margin: 1rem 1rem;
+                order: 0;
+
+            }
+            .item{
+                flex-direction: column;
+                padding: 1rem;
+                margin: 0.5rem 0.4rem;
+                font-size: 1.1rem;
+
+
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="barra">
+            <div class="item item1">
+                <h4>Item 1</h4>
+                <p>Detalle de Item 1</p> </div>
+            <div class="item item2"><h4>Item 2</h4> <p>Detalle de Item 2</p></div>
+            <div class="item item3"><h4>Item 3</h4> <p>Detalle de Item 3</p></div>
+        </div>
+        <div class="principal">
+            <h2>Sección Principal</h2>
+        </div>
+    </div>
+</body>
+</html>
