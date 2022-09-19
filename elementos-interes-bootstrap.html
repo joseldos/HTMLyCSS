@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elementos de Interés en Bootstrap</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <!-- comienzo de modal -->
+        <div class="modal fade" id="elemento-modal"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        Esta es la cabecera del "modal"
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Todo esto forma parte del cuerpo de este nuevo "modal" Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed saepe repellendus pariatur in similique illo distinctio dolores id quibusdam aliquid, tenetur voluptas explicabo nobis, eos necessitatibus, laborum quod itaque velit?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fin del modal -->
+        <h1 class="display-3 text-center m-5">Elementos de Interés en Bootstrap</h1>
+        <hr class="w-50 m-auto border-secondary m-4" />
+        <h2 class="text-center m-3"><span class="badge bg-primary fs-2 shadow-lg p-3">Sección 1 "Jumbotron"</span></h2>
+        <hr class="w-50 m-auto border-secondary mb-4" />
+
+        <section class="jumbo">
+            <div class="bg-light p-5 rounded-3">
+                <h2 class="fw-bold display-5">Titulo del Jumbotron</h2>
+                <p class="col-md-9 fs-4">Estamos en la primera sección. Aqui encontraremos el "Jumbotron" asi como el botón que lanzará un modal centrado. Dentro de cada Jumbotron puede existir mucha información a destacar. </p>
+                <button type="button" class="btn btn-primary btn-lg" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#elemento-modal">Lanzar un Modal</button>
+
+            </div>
+
+        </section>
+        <section class="formulario">
+            <hr class="w-50 m-auto border-secondary mt-4" />
+            <h2 class="text-center m-3"><span class="badge bg-primary fs-2 shadow-lg p-3">Sección 2 "Formularios"</span></h2>
+            <hr class="w-50 m-auto border-secondary mb-4" />
+            <form class="w-50 m-auto" action="">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Nombre">
+                    <label for="floatingInput">Nombre</label>
+                </div>
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="floatingnumber" placeholder="Numero">
+                    <label for="floatingnumber">Numero</label>
+                </div>
+                <div class="form-floating">
+                    <input type="textarea" class="form-control p-lg-5 mt-4 mb-4" id="mensaje" placeholder="Mensaje">
+                    <label for="mensaje">Mensaje</label>
+                </div>
+            </form>
+        </section>
+        <section class="perfil">
+            <hr class="w-50 m-auto border-secondary mt-4">
+            <h2 class="text-center m-3"><span class="badge bg-primary fs-2 shadow-lg p-3">Sección 3 "Perfil"</span></h2>
+            <hr class="w-50 m-auto border-secondary mb-4" />
+            <div class="card w-50 m-auto mb-5">
+                <img src="https://codigoonclick.com/wp-content/uploads/2018/05/desarrollo-web-herramientas.jpg" class="card-img-top" alt="ilustración de un escritorio de un desarrollador web">
+                <div class="card-header">
+                    <h5 class="card-title text-center display-6">José Luis dos Ramos</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">desarrollador Junior de Front-end con conocimientos en HTML/CSS, JavaScript, Angular y React.</p>
+                </div>
+                <div class="card-footer">
+                    <p class="card-text p-1 text-center">joseluisdosramos@gmail.com</p> 
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+    
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
+    <script>
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+myInput.focus()
+})
+    </script>
+</body>
+</html>
